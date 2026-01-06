@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TestConsole Logs</title>
+</head>
+
+<body>
+    <h1>Test Console Logs</h1>
+    <script>
+        let a = 'a11', b = 'b11', c = 'c11', d = 'd11', e = 'e11';
+        console.log("my-external-script.js")
+        console.trace("my-external-script.js")
+        console.log(a, b, c, d, e)
+        console.log({ a, b, c, d, e })
+        console.table([a, b, c, d, e])
+
+        console.time('Loop')
+        let i=0
+        while (i < 10000) i++
+        console.timeEnd('Loop')
+
+        const traceFunction = () => console.trace('traceFunction')        
+        traceFunction()
+
+    </script>
+</body>
+
+</html>

@@ -9,6 +9,16 @@
 
 <body>
     <h1>Test Console Logs</h1>
+    <nav>
+        <a href="/index.html">C0mradeAndThePhantomMenace</a>
+        <hr>
+        <a href="/TheSpadesSpiderX1/">Home</a> |
+        <a href="/TheSpadesSpiderX1/about.html">About</a> |
+        <a href="/JS-TestingCodes/">JS-TestingCodes</a> |
+        <a href="/JS-TestingCodes/ConsoleLog/">ConsoleLog</a> |
+        <a href="/JS-TestingCodes/TestCodeInjecting/">TestCodeInjecting</a>
+    </nav>
+    <!-- *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** -->
     <script>
         let a = 'a11', b = 'b11', c = 'c11', d = 'd11', e = 'e11';
         console.log("my-external-script.js")
@@ -18,11 +28,11 @@
         console.table([a, b, c, d, e])
 
         console.time('Loop')
-        let i=0
+        let i = 0
         while (i < 10000) i++
         console.timeEnd('Loop')
 
-        const traceFunction = () => console.trace('traceFunction')        
+        const traceFunction = () => console.trace('traceFunction')
         traceFunction()
 
     </script>
